@@ -1,0 +1,16 @@
+{
+  "switch_list": [
+    {
+      "hostname": "Core_SW-1",
+      "ip": "10.10.1.1"
+    },
+    {
+      "hostname": "SW-2",
+      "ip": "10.10.1.2"
+    },
+    {
+      "hostname": "SW-3",
+      "ip": "10.10.1.3"
+    }
+  ]
+}
