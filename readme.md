@@ -46,7 +46,7 @@ This guide outlines the setup and usage of a Python script that automates the pr
 
 \*Ensure that the necessary security measures are taken to protect sensitive information such as passwords and email credentials.
 
-\*The script assumes you are using Cisco devices with the **`cisco_ios`** device type. Modify the script accordingly if you are working with  different device types.
+\*The script assumes you are using Cisco devices with the `**cisco_ios**` device type. Modify the script accordingly if you are working with  different device types.
 
 ## Disclaimer
 This script is provided as-is and should be thoroughly tested in a controlled environment before being used in a production setting. Make sure to understand the potential risks associated with automating network device configurations and ensure proper backups are maintained.
