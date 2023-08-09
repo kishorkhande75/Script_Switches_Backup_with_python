@@ -8,7 +8,7 @@ from email import encoders
 def Email():
     
     fromaddr = "XYZ" #EMAIL address of the sender
-    toaddr = "ZYZ" #EMAIL address of the receiver
+    toaddr = "XYZ" #EMAIL address of the receiver
 
     # instance of MIMEMultipart
     msg = MIMEMultipart()
@@ -27,24 +27,6 @@ def Email():
 
     # attach the body with the msg instance
     msg.attach(MIMEText(body, 'plain'))
-
-    # # open the file to be sent
-    # filename = "File_name_with_extension"
-    # attachment = open("Path of the file", "rb")
-
-    # # instance of MIMEBase and named as p
-    # p = MIMEBase('application', 'octet-stream')
-
-    # # To change the payload into encoded form
-    # p.set_payload((attachment).read())
-
-    # # encode into base64
-    # encoders.encode_base64(p)
-
-    # p.add_header('Content-Disposition', "attachment; filename= %s" % filename)
-
-    # # attach the instance 'p' to instance 'msg'
-    # msg.attach(p)
 
     # creates SMTP session
     s = smtplib.SMTP('smtp.gmail.com', 587)

@@ -46,8 +46,4 @@ with open(device_list) as json_file:
         f0.write(output_run_config)
         f0.close()
     Email.Email()
-
-    # #Write the device VLAN output to a file.
-    # f1 = open(backup_dir+'\\'+vlan_filename, 'w')
-    # f1.write(output_vlan)
-    # f1.close()
+    
