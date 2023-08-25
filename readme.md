@@ -27,8 +27,11 @@ This guide outlines the setup and usage of a Python script that automates the pr
 
 1. In **Switches.json**, replace the IP addresses and hostnames of your network devices.
 2. In **Switches.py**, update the following fields within the cisco_2960 dictionary for each device:
+
     **I** username: Your SSH username
+
     **II** password: Your SSH password
+    
     **III** secret: Optional, the enable mode password (if applicable)
 
 ## How to Use
@@ -37,6 +40,7 @@ This guide outlines the setup and usage of a Python script that automates the pr
 2. Open a command prompt or terminal and navigate to the directory containing the script files.
 
 3. Run the **Switches.py** script:
+
     **python Switches.py**
     The script will connect to each network device, retrieve the running configuration, and save it to a separate directory named after the device's hostname.
 
