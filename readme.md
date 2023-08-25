@@ -48,7 +48,7 @@ This guide outlines the setup and usage of a Python script that automates the pr
 
 ## Note
 
-<h3>&#x2022;</h3> Ensure that the necessary security measures are taken to protect sensitive information such as passwords and email credentials.
+<h3>&#x2022;</h3>Ensure that the necessary security measures are taken to protect sensitive information such as passwords and email credentials.
 
 \*The script assumes you are using Cisco devices with the `**cisco_ios**` device type. Modify the script accordingly if you are working with  different device types.
 
