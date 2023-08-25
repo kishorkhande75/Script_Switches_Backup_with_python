@@ -42,6 +42,7 @@ This guide outlines the setup and usage of a Python script that automates the pr
 3. Run the **Switches.py** script:
 
     **<h>&#x2022;</h>** **python Switches.py**
+    
     The script will connect to each network device, retrieve the running configuration, and save it to a separate directory named after the device's hostname.
 
 4. Upon completion of the backup process, an email alert will be sent using the **email.py** script. Make sure to provide the appropriate email addresses and passwords in the script.
