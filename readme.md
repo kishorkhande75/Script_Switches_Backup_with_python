@@ -28,11 +28,11 @@ This guide outlines the setup and usage of a Python script that automates the pr
 1. In **Switches.json**, replace the IP addresses and hostnames of your network devices.
 2. In **Switches.py**, update the following fields within the cisco_2960 dictionary for each device:
 
-    **I.** username: Your SSH username
+    **<h>&#x2022;</h>** username: Your SSH username
 
-    **II.** password: Your SSH password
+    **<h>&#x2022;</h>** password: Your SSH password
 
-    **III.** secret: Optional, the enable mode password (if applicable)
+    **<h>&#x2022;</h>** secret: Optional, the enable mode password (if applicable)
 
 ## How to Use
 1. Place the three script files (**email.py**, **Switches.json**, and **Switches.py**) in the same directory.
@@ -41,7 +41,7 @@ This guide outlines the setup and usage of a Python script that automates the pr
 
 3. Run the **Switches.py** script:
 
-    **I. python Switches.py**
+    **<h>&#x2022;</h>** **python Switches.py**
     The script will connect to each network device, retrieve the running configuration, and save it to a separate directory named after the device's hostname.
 
 4. Upon completion of the backup process, an email alert will be sent using the **email.py** script. Make sure to provide the appropriate email addresses and passwords in the script.
@@ -50,7 +50,7 @@ This guide outlines the setup and usage of a Python script that automates the pr
 
 **<h>&#x2022;</h>** Ensure that the necessary security measures are taken to protect sensitive information such as passwords and email credentials.
 
-\*The script assumes you are using Cisco devices with the `**cisco_ios**` device type. Modify the script accordingly if you are working with  different device types.
+**<h>&#x2022;</h>** The script assumes you are using Cisco devices with the `**cisco_ios**` device type. Modify the script accordingly if you are working with  different device types.
 
 ## Disclaimer
 This script is provided as-is and should be thoroughly tested in a controlled environment before being used in a production setting. Make sure to understand the potential risks associated with automating network device configurations and ensure proper backups are maintained.
