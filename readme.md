@@ -28,11 +28,11 @@ This guide outlines the setup and usage of a Python script that automates the pr
 1. In **Switches.json**, replace the IP addresses and hostnames of your network devices.
 2. In **Switches.py**, update the following fields within the cisco_2960 dictionary for each device:
 
-    **I** username: Your SSH username
+    **I.** username: Your SSH username
 
-    **II** password: Your SSH password
-    
-    **III** secret: Optional, the enable mode password (if applicable)
+    **II.** password: Your SSH password
+
+    **III.** secret: Optional, the enable mode password (if applicable)
 
 ## How to Use
 1. Place the three script files (**email.py**, **Switches.json**, and **Switches.py**) in the same directory.
@@ -41,7 +41,7 @@ This guide outlines the setup and usage of a Python script that automates the pr
 
 3. Run the **Switches.py** script:
 
-    **python Switches.py**
+    **I. python Switches.py**
     The script will connect to each network device, retrieve the running configuration, and save it to a separate directory named after the device's hostname.
 
 4. Upon completion of the backup process, an email alert will be sent using the **email.py** script. Make sure to provide the appropriate email addresses and passwords in the script.
