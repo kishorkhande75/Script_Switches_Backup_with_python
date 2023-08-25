@@ -1,11 +1,11 @@
-Requirement to run python script:-
-Python installed on machine
+## Requirement to run python script:-
+**Python installed on machine**
 
 
-What is in python script:-
-Date and time
-Email Configuration
-Json file for multiple host
+## What in python script:-
+1. Date and time
+2. Email Configuration
+3. Json file for multiple host
 
 
 ## Network Devices Configuration Backup and Email Alert Script
@@ -25,11 +25,11 @@ This guide outlines the setup and usage of a Python script that automates the pr
 
 2. Update the necessary information in the script files:
 
-\. In **Switches.json**, replace the IP addresses and hostnames of your network devices.
-\. In **Switches.py**, update the following fields within the cisco_2960 dictionary for each device:
-    \. username: Your SSH username
-    \. password: Your SSH password
-    \. secret: Optional, the enable mode password (if applicable)
+**.** In **Switches.json**, replace the IP addresses and hostnames of your network devices.
+**.** In **Switches.py**, update the following fields within the cisco_2960 dictionary for each device:
+    **.** username: Your SSH username
+    **.** password: Your SSH password
+    **.** secret: Optional, the enable mode password (if applicable)
 
 ## How to Use
 1. Place the three script files (**email.py**, **Switches.json**, and **Switches.py**) in the same directory.
