@@ -22,7 +22,7 @@ This script automates the process of backing up the configuration of network dev
 3. '**Email.py**'
 <ul>
 <li> Module for sending email notifications.</li>
-<li> Uses the '**smtplib'** library to connect to an SMTP server and send emails.</li> 
+<li> Uses the '**smtplib**' library to connect to an SMTP server and send emails.</li> 
 <li>The email subject and body are provided by the main script.</li>
 </ul>
 
@@ -31,7 +31,7 @@ This script automates the process of backing up the configuration of network dev
 
 2. Replace placeholder values in the '**Switch_main.py**' script:
 <ul>
-<li> Replace '**USER_NAME**', '**PASSWORD**', and '**EMAIL_PASSWORD**' with your actual credentials.</li>
+<li> Replace '**USER_NAME**', **'PASSWORD'**, and '**EMAIL_PASSWORD**' with your actual credentials.</li>
 <li> Set the correct email addresses for to_address_success and to_address_failure.</li>
 </ul>
 
