@@ -1,0 +1,14 @@
+# Switch.json
+
+{
+  "switch_list": [
+    {
+      "hostname": "NAME_OF_DEVICE",
+      "ip": "192.168.1.1"
+    },
+    {
+      "hostname": "NAME_OF_DEVICE",
+      "ip": "192.168.1.2"
+    }
+  ]
+}
