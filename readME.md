@@ -49,6 +49,7 @@ This script automates the process of backing up the configuration of network dev
 <ul>
 <li>The script uses a Gmail account to send email notifications. If you're using a different email provider, modify the SMTP server settings in the '<strong>Email.py</strong>' file.</li>
 </ul>
+
 # Notes
 <ul>
 <li> The script creates a separate directory for each network device inside the specified directory ('<strong>/home/USER_NAME/Switch/</strong>'). Ensure that the script has write permissions to this directory.
