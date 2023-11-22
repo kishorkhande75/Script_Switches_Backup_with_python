@@ -5,29 +5,34 @@ This script automates the process of backing up the configuration of network dev
 
 ## Files
 1. '**Switch_main.py**'
-This is the main script file.
-It reads the list of network devices from a JSON file (Switch.json).
-Connects to each device using SSH and retrieves the running configuration.
-Saves the running configuration to a timestamped backup file in a designated directory.
-Sends success and failure email notifications using the Email module.
+<ul>
+<li> This is the main script file.</li>
+<li> It reads the list of network devices from a JSON file (Switch.json).</li>
+<li> Connects to each device using SSH and retrieves the running configuration.</li>
+<li> Saves the running configuration to a timestamped backup file in a designated directory.</li>
+<li> Sends success and failure email notifications using the Email module.</li>
+</ul>
 
 2. '**Switch.json**'
 <ul> 
-<li>JSON file containing a list of network devices.</li>
+<li> JSON file containing a list of network devices.</li>
 <li> Each device has a hostname and IP address.</li>
 </ul>
 3. '**Email.py**'
-<ul> Module for sending email notifications.
-<ul> Uses the '**smtplib'** library to connect to an SMTP server and send emails.
-<ul> The email subject and body are provided by the main script.
+<ul> 
+<li> Module for sending email notifications.</li>
+<li> Uses the '**smtplib'** library to connect to an SMTP server and send emails.</li>
+<li> The email subject and body are provided by the main script.</li>
+</ul>
 
 ## Usage
 1. Modify the '**Switch.json**' file to include the hostnames and IP addresses of the network devices you want to backup.
 
 2. Replace placeholder values in the '**Switch_main.py**' script:
-
-Replace '**USER_NAME**', '**PASSWORD**', and '**EMAIL_PASSWORD**' with your actual credentials.
-Set the correct email addresses for to_address_success and to_address_failure.
+<ul>
+<li> Replace '**USER_NAME**', '**PASSWORD**', and '**EMAIL_PASSWORD**' with your actual credentials.</li>
+<li> Set the correct email addresses for to_address_success and to_address_failure.</li>
+</ul>
 
 3. Ensure that the required Python packages are installed. You can install them using:
 
