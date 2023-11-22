@@ -12,9 +12,10 @@ Saves the running configuration to a timestamped backup file in a designated dir
 Sends success and failure email notifications using the Email module.
 
 2. '**Switch.json**'
-<ul> JSON file containing a list of network devices.
-<ul> Each device has a hostname and IP address.
-
+<ul> 
+<li>JSON file containing a list of network devices.</li>
+<li> Each device has a hostname and IP address.</li>
+</ul>
 3. '**Email.py**'
 <ul> Module for sending email notifications.
 <ul> Uses the '**smtplib'** library to connect to an SMTP server and send emails.
