@@ -4,7 +4,7 @@
 This script automates the process of backing up the configuration of network devices. It uses the Netmiko library for SSH connectivity to Cisco devices and sends the '**show running-config**' command to retrieve the running configuration. The script is designed to work with a list of network devices specified in a JSON file.
 
 ## Files
-1.'**Switch_main.py**'
+1. '**Switch_main.py**'
 <ul>
 <li> This is the main script file.</li>
 <li> It reads the list of network devices from a JSON file (Switch.json).</li>
@@ -13,13 +13,13 @@ This script automates the process of backing up the configuration of network dev
 <li> Sends success and failure email notifications using the Email module.</li>
 </ul>
 
-2.'**Switch.json**'
+2. '**Switch.json**'
 <ul> 
 <li> JSON file containing a list of network devices.</li>
 <li> Each device has a hostname and IP address.</li>
 </ul>
-3.'**Email.py**'
-<ul> 
+3. '**Email.py**'
+<ul>
 <li> Module for sending email notifications.</li>
 <li> Uses the '**smtplib'** library to connect to an SMTP server and send emails.</li>
 <li> The email subject and body are provided by the main script.</li>
