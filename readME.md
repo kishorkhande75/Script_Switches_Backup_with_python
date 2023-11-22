@@ -7,7 +7,7 @@ This script automates the process of backing up the configuration of network dev
 1. '**Switch_main.py**'
 <ul>
 <li> This is the main script file.</li>
-<li> It reads the list of network devices from a JSON file (Switch.json).</li>
+<li> It reads the list of network devices from a JSON file '**(Switch.json)**'.</li>
 <li> Connects to each device using SSH and retrieves the running configuration.</li>
 <li> Saves the running configuration to a timestamped backup file in a designated directory.</li>
 <li> Sends success and failure email notifications using the Email module.</li>
@@ -22,9 +22,8 @@ This script automates the process of backing up the configuration of network dev
 3. '**Email.py**'
 <ul>
 <li> Module for sending email notifications.</li>
-
-<li> Uses the '**smtplib'** library to connect to an SMTP server and send emails.</li>
-<li> The email subject and body are provided by the main script.</li>
+<li> Uses the '**smtplib'** library to connect to an SMTP server and send emails.</li> 
+<li>The email subject and body are provided by the main script.</li>
 </ul>
 
 ## Usage
