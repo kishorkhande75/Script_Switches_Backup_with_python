@@ -7,7 +7,7 @@ This script automates the process of backing up the configuration of network dev
 1. '**Switch_main.py**'
 <ul>
 <li> This is the main script file.</li>
-<li> It reads the list of network devices from a JSON file '**(Switch.json)**'.</li>
+<li> It reads the list of network devices from a JSON file '<strong>(Switch.json)</strong>'.</li>
 <li> Connects to each device using SSH and retrieves the running configuration.</li>
 <li> Saves the running configuration to a timestamped backup file in a designated directory.</li>
 <li> Sends success and failure email notifications using the Email module.</li>
@@ -22,7 +22,7 @@ This script automates the process of backing up the configuration of network dev
 3. '**Email.py**'
 <ul>
 <li> Module for sending email notifications.</li>
-<li> Uses the '**smtplib**' library to connect to an SMTP server and send emails.</li> 
+<li> Uses the '<strong>smtplib</strong>' library to connect to an SMTP server and send emails.</li> 
 <li>The email subject and body are provided by the main script.</li>
 </ul>
 
@@ -47,11 +47,11 @@ This script automates the process of backing up the configuration of network dev
 
 # Email Configuration
 <ul>
-<li>The script uses a Gmail account to send email notifications. If you're using a different email provider, modify the SMTP server settings in the '**Email.py**' file.</li>
+<li>The script uses a Gmail account to send email notifications. If you're using a different email provider, modify the SMTP server settings in the '<strong>Email.py</strong>' file.</li>
 </ul>
 # Notes
 <ul>
-<li> The script creates a separate directory for each network device inside the specified directory ('**/home/USER_NAME/Switch/**'). Ensure that the script has write permissions to this directory.
+<li> The script creates a separate directory for each network device inside the specified directory ('<strong>/home/USER_NAME/Switch/</strong>'). Ensure that the script has write permissions to this directory.
 <li> Review email security considerations, such as enabling "less secure apps" for Gmail or using an App Password.</li>
 </ul>
 
