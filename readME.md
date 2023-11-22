@@ -18,9 +18,8 @@ This script automates the process of backing up the configuration of network dev
 <li> JSON file containing a list of network devices.</li>
 <li> Each device has a hostname and IP address.</li>
 </ul>
-
-3. '**Email.py**'
-<ul>
+ 
+3. '**Email.py**'<ul>
 <li> Module for sending email notifications.</li>
 <li> Uses the '**smtplib'** library to connect to an SMTP server and send emails.</li>
 <li> The email subject and body are provided by the main script.</li>
