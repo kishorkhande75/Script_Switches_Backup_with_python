@@ -1,10 +1,10 @@
 # Network Device Configuration Backup Script
 
 ## Overview
-This script automates the process of backing up the configuration of network devices. It uses the Netmiko library for SSH connectivity to Cisco devices and sends the show running-config command to retrieve the running configuration. The script is designed to work with a list of network devices specified in a JSON file.
+This script automates the process of backing up the configuration of network devices. It uses the Netmiko library for SSH connectivity to Cisco devices and sends the '**show running-config**' command to retrieve the running configuration. The script is designed to work with a list of network devices specified in a JSON file.
 
 ## Files
-1. '**Switch_main.py**'
+1.'**Switch_main.py**'
 <ul>
 <li> This is the main script file.</li>
 <li> It reads the list of network devices from a JSON file (Switch.json).</li>
@@ -13,12 +13,12 @@ This script automates the process of backing up the configuration of network dev
 <li> Sends success and failure email notifications using the Email module.</li>
 </ul>
 
-2. '**Switch.json**'
+2.'**Switch.json**'
 <ul> 
 <li> JSON file containing a list of network devices.</li>
 <li> Each device has a hostname and IP address.</li>
 </ul>
-3. '**Email.py**'
+3.'**Email.py**'
 <ul> 
 <li> Module for sending email notifications.</li>
 <li> Uses the '**smtplib'** library to connect to an SMTP server and send emails.</li>
@@ -45,10 +45,13 @@ This script automates the process of backing up the configuration of network dev
 <code>python Switch_main.py</code>
 
 # Email Configuration
-The script uses a Gmail account to send email notifications. If you're using a different email provider, modify the SMTP server settings in the '**Email.py**' file.
-Notes
-The script creates a separate directory for each network device inside the specified directory ('**/home/USER_NAME/Switch/**'). Ensure that the script has write permissions to this directory.
-
-Review email security considerations, such as enabling "less secure apps" for Gmail or using an App Password.
+<ul>
+<li>The script uses a Gmail account to send email notifications. If you're using a different email provider, modify the SMTP server settings in the '**Email.py**' file.</li>
+</ul>
+# Notes
+<ul>
+<li> The script creates a separate directory for each network device inside the specified directory ('**/home/USER_NAME/Switch/**'). Ensure that the script has write permissions to this directory.
+<li> Review email security considerations, such as enabling "less secure apps" for Gmail or using an App Password.</li>
+</ul>
 
 **Note:** This README provides a general overview and instructions. Ensure you thoroughly understand the script and make necessary adjustments based on your specific requirements and security considerations.
