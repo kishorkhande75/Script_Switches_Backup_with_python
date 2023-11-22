@@ -31,7 +31,7 @@ This script automates the process of backing up the configuration of network dev
 
 2. Replace placeholder values in the '**Switch_main.py**' script:
 <ul>
-<li> Replace '**USER_NAME**', '**PASSWORD**', and '**EMAIL_PASSWORD**' with your actual credentials.</li>
+<li> Replace '<strong>USER_NAME</strong>', '<strong>PASSWORD</strong>', and '<strong>EMAIL_PASSWORD</strong>' with your actual credentials.</li>
 <li> Set the correct email addresses for to_address_success and to_address_failure.</li>
 </ul>
 
